@@ -6,9 +6,9 @@
         <ul>
             <!-- à finir pour que ce soit interactif -->
             <li><a href="#"><i class="icon-shop"></i>Accueil</a></li>
-            <li><a href="#"><i class="icon-data"></i><?= htmlspecialchars($displayed['boutique']) ?></a></li>
-            <li><a href="#"><?=htmlspecialchars( $displayed['rayon}}</a></li>
-            <li><?=htmlspecialchars( $displayed['nom}}</li>
+            <li><a href="#"><i class="icon-data"></i>{{product.boutique}}</a></li>
+            <li><a href="#">{{product.rayon}}</a></li>
+            <li>{{product.nom}}</li>
         </ul>
     </nav>
     <article id="product" class="product">
