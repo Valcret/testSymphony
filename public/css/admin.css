@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Raleway:wght@300;400&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+
+.sb-nav-fixed #layoutSidenav #layoutSidenav_content {
+    padding-left: 25px;
+    top: 10px;
+}
+
+.mb-4 {
+    margin-top: 2rem;
+}
+
+.sb-nav-fixed #layoutSidenav #layoutSidenav_nav .sb-sidenav {
+    padding-top: 25px;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav .sb-sidenav-menu-heading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--gray);
+    padding: 1.75rem 1rem 0.75rem;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav .nav-link {
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+.sb-sidenav-light .sb-sidenav-menu .nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+}
+
+a.nav-link {
+    margin-left: 10px;
+    padding: 0.5rem 0.5rem;
+    line-height: 1;
+    border-radius: 0.25rem;
+    color: var(--primary);
+    border: thin;
+}
+
+a.nav-link:hover,
+a.nav-link:active {
+    align-items: center;
+    color: #fff;
+    background-color: var(--primary);
+    box-shadow: none;
+    padding: 0.5rem 0.5rem;
+    line-height: 1;
+    border-radius: 0.25rem;
+    border: thin;
+
+}
+
+.card-header {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black);
+    font-size: 1.7rem;
+    padding: 0 1rem 1rem;
+    margin: -15px 0 0;
+}
+
+/* Change styles for span on extra small screens */
+
+@media screen and (max-width: 300px) {}

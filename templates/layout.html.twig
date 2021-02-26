@@ -5,9 +5,15 @@
 
 </head>
 <body>
+    <nav>
+        <a href="{{ path('home') }}"> Home </a>
+        <a href="{{ path('contact') }}"> Contact </a>
+    </nav>
     
     {% block message %} {% endblock %}
     <h1> Mon premier en symfony </h1>
+    
+    <img src="{{ asset('images/cat.jpg') }}" alt="">
     
     {% block main %}
     {% endblock %}
