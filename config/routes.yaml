@@ -17,3 +17,7 @@ ecole:
 product:
     path: /product
     controller: App\Controller\HomeController::persons
+
+orders:
+    path: /orders
+    controller: App\Controller\OrderController::test
