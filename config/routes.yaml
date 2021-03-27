@@ -21,3 +21,7 @@ product:
 orders:
     path: /orders
     controller: App\Controller\OrderController::test
+
+productlist:
+    path: /productlist
+    controller: App\Controller\ProductListController::listProductInfos

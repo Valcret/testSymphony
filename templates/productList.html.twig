@@ -1,0 +1,21 @@
+{% extends 'exo1layout.html.twig' %}
+{% block main %} 
+    <main class="main container">
+        {% for product in products %}
+                <article id="{{product.getIdProduit}}" class="product">
+                    <h2>{{product.getMarque}}-{{product.getNom}}</h2>
+                    <ul>
+                    <li>{{product.getPrix}}€ dont {{product.getEcoparticipation}}€ d'écoparticipation</li>
+                    <li><strong>Référence produit</strong>{{product.getReference}}</li>
+                    <li>{{product.getTitre1}}</li>
+                    <li>{{product.getDescription1}}</li>
+                    <li>{{product.getTitre2}}</li>
+                    <li>{{product.getDescription2}}</li>
+                    <li>{{product.getTitre3}}</li>
+                    <li>{{product.getDescription3}}</li>
+                    </ul>
+                </article>
+        {% endfor %}
+    </main>
+
+{% endblock %}

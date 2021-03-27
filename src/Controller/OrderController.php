@@ -4,9 +4,8 @@ namespace App\Controller;
 // indique a symfony que la classe se trouve 
 // dans src/Controller
 
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use App\Entity\commandes;
+use App\Entity\Commandes;
 
 class OrderController extends AbstractController
 {
@@ -17,8 +16,7 @@ class OrderController extends AbstractController
         //  SELECT * FROM commandes
         $orders = $database->getRepository(Commandes::class)->findAll();
         
-        //var_dump($orders);
-        //die();
+        return $this->render('orders.html.twig' , [ 'orders' => $orders]);
     }
     
 }

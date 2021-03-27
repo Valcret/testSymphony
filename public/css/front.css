@@ -1230,3 +1230,9 @@ CART MODAL
         background-color: var(--color-main);
         box-shadow: var(--shadow-xl);
     }
+    
+    article ul li {
+        margin-bottom: 20px;
+        list-style: none;
+        ;
+    }

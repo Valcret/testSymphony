@@ -1,0 +1,26 @@
+{% extends 'layout.html.twig' %}
+
+{% block main %}
+    <h1> Liste des commandes </h1>
+    
+    <table>
+        <tr>
+            <th> id commande </th>
+            <th> date </th>
+            <th> status </th>
+            <th> id client </th>
+        </tr>
+        
+        {% for order in orders %}
+            <tr>
+                <td>{{ order.getOrderId }}</td>
+                <td>{{ order.getDate|date("m/d/Y") }}</td>
+                <td>{{ order.getStatut }}</td>
+            </tr>
+        {% endfor %}
+        
+    </table>
+    
+    
+    
+{% endblock %}
